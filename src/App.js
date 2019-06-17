@@ -19,6 +19,8 @@ class App extends Component {
   handlePublish = e =>{
     // debugger
     // let content =  e.target.value.split('.');
+
+    // '__it is this__'.split(/((\W+)|(\_+))/ig)
     this.setState({
       text: '',
       content: this.state.content.concat('\n', marked(this.state.text))
